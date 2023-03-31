@@ -1,4 +1,4 @@
-# react-native-radio-buttons
+# react-native-radio-buttonx
 
 customize your radio buttons easily
 
