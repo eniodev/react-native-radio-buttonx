@@ -3,9 +3,7 @@ import { RadioButtons } from 'react-native-radio-buttons';
 import React from 'react';
 
 export default function App() {
-
   const [selectedOption, setSelectedOption] = React.useState('Male');
-  
   const handleSelect = (option: string) => {
     setSelectedOption(option);
   };
@@ -14,10 +12,10 @@ export default function App() {
     <View style={styles.container}>
       <Text>React Native Radio Buttons</Text>
       <RadioButtons
-          options={['Banana', 'Apple', 'Orange']}
-          selectedOption={selectedOption}
-          onSelect={handleSelect}
-                  />
+        options={['Banana', 'Apple', 'Orange']}
+        selectedOption={selectedOption}
+        onSelect={handleSelect}
+      />
 
       <Text>Selected: {selectedOption}</Text>
     </View>
