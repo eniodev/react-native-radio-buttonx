@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
-import { RadioButtons } from 'react-native-radio-buttons';
+import { RadioButtons } from 'react-native-radio-buttonx';
 import React from 'react';
 
 export default function App() {
