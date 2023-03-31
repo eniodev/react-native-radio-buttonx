@@ -3,7 +3,7 @@ import { RadioButtons } from 'react-native-radio-buttons';
 import React from 'react';
 
 export default function App() {
-  const [selectedOption, setSelectedOption] = React.useState('Male');
+  const [selectedOption, setSelectedOption] = React.useState('Banana');
   const handleSelect = (option: string) => {
     setSelectedOption(option);
   };
