@@ -5,7 +5,7 @@ customize your radio buttons easily
 ## Installation
 
 ```sh
-npm install react-native-radio-buttonsx
+npm install react-native-radio-buttonx
 ```
 
 ## Usage
