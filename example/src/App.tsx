@@ -1,18 +1,25 @@
-import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-radio-buttons';
+import { StyleSheet, Text, View } from 'react-native';
+import { RadioButtons } from 'react-native-radio-buttons';
+import React from 'react';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const [selectedOption, setSelectedOption] = React.useState('Male');
+  
+  const handleSelect = (option: string) => {
+    setSelectedOption(option);
+  };
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>React Native Radio Buttons</Text>
+      <RadioButtons
+          options={['Banana', 'Apple', 'Orange']}
+          selectedOption={selectedOption}
+          onSelect={handleSelect}
+                  />
+
+      <Text>Selected: {selectedOption}</Text>
     </View>
   );
 }
@@ -20,12 +27,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
   },
 });

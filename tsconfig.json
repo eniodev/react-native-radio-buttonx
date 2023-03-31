@@ -4,6 +4,10 @@
     "paths": {
       "react-native-radio-buttons": ["./src/index"]
     },
+    "types": [
+      "react",
+      "react-native"
+    ],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,

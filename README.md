@@ -5,17 +5,48 @@ customize your radio buttons easily
 ## Installation
 
 ```sh
-npm install react-native-radio-buttons
+npm install react-native-radio-buttonsx
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-radio-buttons';
+import { StyleSheet, Text, View } from 'react-native';
+import { RadioButtons } from 'react-native-radio-buttons';
+import React from 'react';
+
+export default function App() {
+
+  const [selectedOption, setSelectedOption] = React.useState('Male');
+  
+  const handleSelect = (option: string) => {
+    setSelectedOption(option);
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text>React Native Radio Buttons</Text>
+      <RadioButtons
+          options={['Banana', 'Apple', 'Orange']}
+          selectedOption={selectedOption}
+          onSelect={handleSelect}
+                  />
+
+      <Text>Selected: {selectedOption}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 
 // ...
-
-const result = await multiply(3, 7);
 ```
 
 ## Contributing
