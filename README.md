@@ -30,7 +30,7 @@ export default function App() {
           options={['Banana', 'Apple', 'Orange']}
           selectedOption={selectedOption}
           onSelect={handleSelect}
-                  />
+        />
 
       <Text>Selected: {selectedOption}</Text>
     </View>
