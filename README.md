@@ -2,6 +2,8 @@
 
 Create radio buttons with a range of styles and customize the radio button selector using your own custom component. This package is perfect for developers who need to create visually appealing and interactive radio buttons in their mobile applications
 
+![Demo Image](/radio-buttonx.png)
+
 ## Installation
 
 ```sh
@@ -13,7 +15,7 @@ npm install react-native-radio-buttonx
 ```js
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { useState } from 'react';
-import { RadioButtons } from './RadioButtonx';
+import { RadioButtons } from 'react-native-radio-buttonx';
 
 
 const foo = () => {
