@@ -44,7 +44,7 @@ export default function App() {
           //SelectorComponent={foo}
 
           />
-          
+
     </View>
   );
 }
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 const styleOptions = {
   rounded: true,
   radio: 20,
-  display: 'row',
+  display: 'column',
   //defaultColor: 'gray',
   //selectedColor: 'brown',
   //fontWeight: 'bold',
