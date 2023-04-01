@@ -11,13 +11,21 @@ npm install react-native-radio-buttonx
 ## Usage
 
 ```js
-import { StyleSheet, Text, View } from 'react-native';
-import { RadioButtons } from 'react-native-radio-buttonx';
-import React from 'react';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { useState } from 'react';
+import { RadioButtons } from './RadioButtonx';
+
+
+const foo = () => {
+  return (
+    <Image source={require('./assets/favicon.png')}  style={{width: 12, height: 12}}/>
+    //<Text>✅</Text>
+  )
+}
 
 export default function App() {
 
-  const [selectedOption, setSelectedOption] = React.useState('Banana');
+  const [selectedOption, setSelectedOption] = useState('Apple');
   
   const handleSelect = (option: string) => {
     setSelectedOption(option);
@@ -25,14 +33,18 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>React Native Radio Buttons</Text>
+      <Text style={{marginBottom: 40}}>Selected: {selectedOption}</Text>
+      
       <RadioButtons
-          options={['Banana', 'Apple', 'Orange']}
+          gap={19}
+          options={['Apple','Orange','Banana']}
           selectedOption={selectedOption}
           onSelect={handleSelect}
-        />
+          styleOptions={styleOptions}
+          //SelectorComponent={foo}
 
-      <Text>Selected: {selectedOption}</Text>
+          />
+          
     </View>
   );
 }
@@ -46,6 +58,18 @@ const styles = StyleSheet.create({
   },
 });
 
+
+const styleOptions = {
+  rounded: true,
+  radio: 20,
+  display: 'row',
+  //defaultColor: 'gray',
+  //selectedColor: 'brown',
+  //fontWeight: 'bold',
+  //fontSize: 20,
+  //fontStyle: 'italic',
+  //color: 'brown'
+}
 // ...
 ```
 

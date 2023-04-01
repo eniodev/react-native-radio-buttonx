@@ -25,7 +25,8 @@
     "!**/__tests__",
     "!**/__fixtures__",
     "!**/__mocks__",
-    "!**/.*"
+    "!**/.*",
+    "README.md"
   ],
   "scripts": {
     "test": "jest",
@@ -39,7 +40,7 @@
   },
   "keywords": [
     "react-native-radio-buttons",
-    "react-native-radio-buutton",
+    "react-native-radio-button",
     "react-native-radio-buttons-group",
     "react-native",
     "custom-radio-button",
