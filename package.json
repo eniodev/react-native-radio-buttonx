@@ -1,7 +1,7 @@
 {
   "name": "react-native-radio-buttonx",
-  "version": "1.0.0",
-  "description": "test",
+  "version": "1.0.1",
+  "description": "A highly customizable radio button component with a range of styles that also allows you to customize the radio button selector using your own custom component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
