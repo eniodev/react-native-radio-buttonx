@@ -44,6 +44,7 @@
     "react-native-radio-buttons-group",
     "react-native-radio-group",
     "react-native-component",
+    "react-component",
     "react-native-simple-radio-buttons",
     "react-native-custom-radio-buttons",
     "button",
@@ -52,6 +53,7 @@
     "expo-radio-buttons",
     "custom-radio-button",
     "expo",
+    "form",
     "ios",
     "android"
   ],
